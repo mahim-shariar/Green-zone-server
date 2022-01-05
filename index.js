@@ -189,7 +189,7 @@ async function run() {
         res.json(cursor)
       });
 
-      // payment int.
+      // payment inttt.
       app.get('/confirmOrder/:id', async (req, res) => {
         const id = req.params.id;
         const query = { _id: ObjectId(id) };
