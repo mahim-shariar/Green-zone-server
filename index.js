@@ -281,7 +281,7 @@ async function run() {
         res.json(result);
       });
      
-      // payment method
+      // payment methood
       app.post("/create-payment-intent", async (req, res) => {
         const paymentInfo = req.body;
         // Create a PaymentIntent with the order amount and currency
