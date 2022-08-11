@@ -219,7 +219,6 @@ async function run() {
       });
 
       // GET myOrders
-
       app.get("/myOrders/:email", async (req, res) => {
         const email = req.params.email;
         const cursor = { Email: email }
@@ -293,8 +292,6 @@ async function run() {
       
         res.json({clientSecret: paymentIntent.client_secret});
       });
-
-
     }
     finally {
     //   await client.close();
